@@ -13,5 +13,5 @@ const handleUserInput = function (key) {
 };
 
 console.log("Connecting ...");
-connect();
-setupInput();
+const conn = connect();
+setupInput(conn);
