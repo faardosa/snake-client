@@ -7,6 +7,7 @@ const connect = function () {
   conn.on("connect", () => {
 console.log("Successfully connected to server")
 conn.write("Name: FMG")
+// conn.write("Move: up")
 
   });
   conn.on('data', (data) => {
@@ -19,6 +20,8 @@ conn.write("Name: FMG")
 
   return conn;
 };
+
+
 module.exports = {
   connect
 }
