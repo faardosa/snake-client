@@ -23,7 +23,10 @@ const handleUserInput = function (key) {
     connection.write("Move: down") 
   } if (key === 'd') {
     connection.write("Move: right") 
+  } if (key === "f") {
+    connection.write("Say: this is so fun")
   }
+
 
   console.log(key)
   // your code here
